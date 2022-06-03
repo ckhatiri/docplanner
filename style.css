@@ -1,26 +1,49 @@
 body {
-  margin: 0px 167px 0px 167px;
+  margin: 0px 160px 0px 160px;
   font-weight: 400;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   color: #747474;
 }
-
-nav {
+.headernav{
   display: flex;
   justify-content: space-around;
+  position: fixed;
   top: 0;
+  left: 0;
+  height: 69.9805px;
+   width: 100%;
+  z-index: 3;
+  background: hsla(0, 0%, 100%, .98);
+  transition: box-shadow .25s ease 0s ;
+}
+.section1{
   position: sticky;
-  background-color: #ffff;
+  top: 0;
+  zoom: 1;
+  max-width: 1015px;
+  padding: 0 20px;
 }
-* {
-  box-sizing: inherit;
+.logonav{
+  width: 268 px; 
+  height: 33px;
 }
+.section1 h1{
+  margin:0;
+  line-height: 68px;
+  display: inline-block;
+  position: relative;
+}
+.navbar {
+float: right;
+position: relative;
+}
+
 .navbar ul {
   list-style-type: none;
 }
 
 .navbar li {
-  display: inline;
+  display: inline-block;
 }
 
 .navbar a {
@@ -44,7 +67,7 @@ nav {
 }
 
 .dropdown {
-  position: absolute;
+  position:relative;
   display: inline-block;
   cursor: pointer;
   appearance: none;
@@ -52,9 +75,10 @@ nav {
 
 .dropdown-content {
   display: none;
+  height: auto;
   padding-top: 10px;
-  position: relative;
-  min-width: 240px;
+   position: absolute;
+  
   margin-left: -100px;
   background: #fff;
   box-shadow: 0 5px 10px 0 #d3cfc9;
@@ -63,19 +87,25 @@ nav {
 }
 
 .dropdown-content a {
-  color: #ababab;
+  width: 220px;
+  height: 41.97px;
+  font-size: 15px;
+  line-height: 18px;
+  word-spacing: 0;
   display: block;
+  padding: 0 0.6em;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  color: #ababab;
 }
 
 .logo-header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 2.0625rem auto 3.75rem;
+  margin: 140px 106px 60px 106px;
 }
 
 .logo-header h1 {
@@ -179,15 +209,18 @@ p {
   max-width: 100%;
   height: auto;
   border: 0;
+  line-height: 20.8px;
 }
 
 .patient h1,
 .doctors h1,
 .clinics h1 {
-  font-family: Work Sans, Arial, sans-serif;
-  font-size: 1.625em;
-  font-weight: 400;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
   letter-spacing: -0.3px;
+  height: 33.79px;
+  width: 247.65px;
   color: #fff;
   margin: 0.3em 0;
 }
@@ -195,41 +228,114 @@ p {
 .patient h2,
 .doctors h2,
 .clinics h2 {
-  font-size: 1.5em;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 24px;
   font-weight: 300;
   letter-spacing: -0.3px;
-  line-height: 1.2;
+  line-height: 28.8px;
+  height: 86.42px;
+  width: 247.65px;
   margin: 0;
   color: #fff;
 }
 
-/*#co{
-        background-color: #00ccb1;
 
-    }
-    #cou{
-        background-color: #3d83df;
+#co {
+  background-color: #00ccb1;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 19.2px;
+  border: none;
+  line-height: 24.96px;
+  width: 180px;
+  height: 40px;
+  padding-right: 20px;
+}
 
-    }
-    #coun{
-        background-color: #1b2734;
+#co option {
+  background: white;
+  color: #1b2734;
+  width: 194px;
+  height: 40px;
+  font-size: 15px;
+}
 
-    ;}
-     select:invalid {
-        color: #fff;
-    }    */
+#cou {
+  background-color: #3d83df;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 19.2px;
+  border: none;
+  line-height: 24.96px;
+  width: 180px;
+  height: 40px;
+  padding-right: 20px;
+}
+
+
+#cou option {
+  background: white;
+  color: #1b2734;
+  width: 194px;
+  height: 40px;
+  font-size: 15px;
+}
+
+#coun {
+  border: none;
+  background: #1b2734;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 19.2px;
+  line-height: 24.96px;
+  width: 187px;
+  height: 40px;
+  padding-right: 20px;
+
+}
+
+#coun option {
+  background: white;
+  color: #1b2734;
+  width: 194px;
+  height: 40px;
+  font-size: 15px;
+}
+#count{
+  border: none;
+  background: #1b2734;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 19.2px;
+  line-height: 24.96px;
+  width: 247.65px;
+  height: 40px;
+  padding-right: 20px;
+}
+#count option {
+  background: white;
+  color: #1b2734;
+  width: 194px;
+  height: 40px;
+  font-size: 15px;
+}
+
 .fourth {
   display: flex;
   flex-direction: row;
 
   margin: 2.5rem auto 3.125rem;
 }
-
+.logos{
+  width: 653.239px;
+  height: 108.651px;
+  margin-left: 100px;
+}
 .logos ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -240,90 +346,301 @@ p {
   padding-left: 10px;
 }
 
-.logos a:hover {
-  color: #00b39b;
-}
-
-.logos a:visited {
-  color: #ababab;
-}
 .fourth h1 {
   float: left;
-  width: 64%;
-  font-size: 1.625em;
-  margin: 0.25em 0 0.35em;
-  padding-right: 1em;
+  height: 101.37px;
+  width: 321.74px;
+  font-size: 26px;
+  margin: 7px 0 9px;
+  padding-right: 26px;
   color: #00ccb1;
 }
 
 .fifth {
+  height: 600px;
   background-color: #dbf7f6;
-  margin: 3.125rem -167px 5.5rem -167px ;
+  margin: 3.125rem -167px 5.5rem -167px;
 }
+
 .fifth_div {
-    margin: 3.125rem 167px 5.5rem 167px;
+  margin: 3.125rem 167px 5.5rem 250px;
   display: flex;
   flex-direction: row;
+}
+
+.header1 {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.world {
+  font-family: "work sans", Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 3OO;
+  letter-spacing: .3px;
+  color: #00b39b;
+  height: 88.375px;
+  line-height: 44.2px;
+}
+
+.p_world {
+  height: 48px;
+  width: 415px;
+  margin: 22px 0 22px 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+}
+.divworld{
+  margin-top: 60px;
+}
+.divlogo {
+
+  height: 326px;
+  margin-top: 43px;
+  margin-left: -120px;
+  overflow: hidden;
+}
+.flagpatient{
+  margin-top: 20px;
 }
 .div_block {
   display: flex;
   flex-direction: row;
+  margin-left: 100px;
 }
-.div_flag{
-    border-radius: 5px;
-    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
-    height: 250px;
-    width: 200px;
-    background: white;
-    margin: 15px;
-    padding: 15px;
+
+.div_flag {
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  height: 240px;
+  width: 200px;
+  background: white;
+  margin: 15px;
+  padding: 15px;
 }
-.div_patient{
-    border-radius: 5px;
-    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
-    height: 250px;
-    width: 200px;
-    background: white;
-    margin: 15px;
-    padding: 15px;
+
+.div_patient {
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  height: 240px;
+  width: 200px;
+  background: white;
+  margin: 15px;
+  padding: 15px;
 }
-.div_doctor{
-    border-radius: 5px;
-    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
-    height: 250px;
-    width: 200px;
-    background: white;
-    margin: 15px;
-    padding: 15px;
-  
+
+.div_doctor {
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  height: 240px;
+  width: 200px;
+  background: white;
+  margin: 15px;
+  padding: 15px;
+
 }
-.div_visit{
-    border-radius: 5px;
-    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
-    height: 250px;
-    width: 200px;
-    background: white;
-    margin: 15px;
-    padding: 15px;
+
+.div_visit {
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+  height: 240px;
+  width: 200px;
+  background: white;
+  margin: 15px;
+  padding: 15px;
+ 
 }
-.div_global{
-    margin: 15px;
+
+.div_global {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
 }
-.div_global p{
-font-size: 13px;
-text-align: center;
+
+.div_global p {
+  font-size: 13px;
+  text-align: center;
 }
-.div_global h3{
-    font-family: "Work Sans", Arial, sans-serif;
-	font-size: 24px;
-	font-weight: 300;
-	letter-spacing: -0.3px;
-	line-height: 31.2px;
-	text-align: center;
-    color: rgb(0, 179, 155);
+
+.div_global h3 {
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  line-height: 31.2px;
+  text-align: center;
+  color: rgb(0, 179, 155);
 }
-.div_global img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
+
+.div_global img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lives {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  line-height: 39px;
+  text-align: center;
+  color: #00b39b;
+}
+
+.lives_p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  height: 72.017px;
+  width: 460px;
+  padding-left: 280px;
+}
+
+.sixth {
+  height: 1349.89px;
+  width: 1015px;
+
+}
+
+.sixth-figure {
+
+  display: grid;
+  grid-template: auto auto auto/ auto auto auto;
+  grid-gap: 10px;
+}
+
+.offices a {
+  border: 1px solid rgba(0, 0, 0, .03);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 311px;
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+
+}
+
+.officediv {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6666666667;
+  color: #747474;
+  padding-top: 5px;
+  margin-left: 19px;
+  margin-right: 17px;
+
+}
+
+.officediv span {
+  float: right;
+  vertical-align: middle;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 15px;
+  background: #3d83df;
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .04em;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none !important;
+
+}
+
+.join-us {
+
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 80px;
+
+
+
+}
+
+.join-us-header {
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: .875em;
+  text-align: center;
+}
+
+.join-us-text {
+  font-family: 'Work Sans', sans-serif !important;
+  font-weight: 300;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #333333;
+  text-decoration: none solid rgb(51 51 51);
+}
+
+
+.join-us-header a {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 1.1666666667em 1.5em;
+  background: #3d83df;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .04em;
+  font-size: .75rem;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: all .2s ease 0s;
+}
+
+.main-footer {
+  border-top: 1px solid #eef2f2;
+  margin-left: -167px;
+  margin-right: -167px;
+  text-align: center;
+  padding: 16px 0;
+  line-height: 20.8px;
+  height: 122.953px;
+
+}
+
+footer p {
+  font-size: 12px;
+  line-height: 15.6px;
+  color: #ababab;
+
+  margin: 19px 0 5px 0;
+  text-align: center;
+
+}
+
+.div_footer {
+  font-size: 12px;
+  line-height: 22.6px;
+  color: #ababab;
+  padding: 0 20px 0 20px;
+
+}
+
+
+.a-footer:hover {
+  text-decoration: underline;
+}
+
+.a-footer {
+  text-decoration: none;
+  color: #3d83df;
+}
